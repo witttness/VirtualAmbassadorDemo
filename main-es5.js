@@ -151,7 +151,7 @@ module.exports = "<div class=\"form-group\">\n    <label for=\"exampleInputEmail
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"form-group\">\n    <label for=\"exampleInputEmail1\">What zip code are you from?</label>\n    <input type=\"text\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter zip\" [(ngModel)]=\"zip\">\n    <!-- <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small> -->\n  </div>\n<div class=\"row\">\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-default btn-block\" (click)=\"goBack()\">&larr; Back</button>\n    </div>\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-primary btn-block\" (click)=\"goNext()\">Next &rarr;</button>\n    </div>\n</div>"
+module.exports = "<div class=\"form-group\">\n    <label for=\"exampleInputEmail1\">What zip code are you from?</label>\n    <input type=\"text\" class=\"form-control\" id=\"exampleInputEmail1\" maxlength=\"10\" aria-describedby=\"emailHelp\" placeholder=\"Enter zip\" [(ngModel)]=\"zip\">\n    <!-- <small id=\"emailHelp\" class=\"form-text text-muted\">We'll never share your email with anyone else.</small> -->\n  </div>\n<div class=\"row\">\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-default btn-block\" (click)=\"goBack()\">&larr; Back</button>\n    </div>\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-primary btn-block\" (click)=\"goNext()\">Next &rarr;</button>\n    </div>\n</div>"
 
 /***/ }),
 
