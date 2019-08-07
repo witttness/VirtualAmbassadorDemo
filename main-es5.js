@@ -765,7 +765,7 @@ var MyService = /** @class */ (function () {
             "GroupType": this.visitorData.group,
             "EducationLevel": this.visitorData.education
         };
-        this.http.post("/VAmbassadorService/api/visit/Start", data)
+        this.http.post("//ec2-52-87-186-251.compute-1.amazonaws.com/VAmbassadorService/api/visit/Start", data)
             .toPromise()
             .then(function (id) {
             _this.storeVisitorId(id);
@@ -773,7 +773,7 @@ var MyService = /** @class */ (function () {
     };
     MyService.prototype.startAnonymousVisit = function () {
         var _this = this;
-        this.http.post("/VAmbassadorService/api/visit/StartAnonymous", null)
+        this.http.post("//ec2-52-87-186-251.compute-1.amazonaws.com/VAmbassadorService/api/visit/StartAnonymous", null)
             .toPromise()
             .then(function (id) {
             _this.storeVisitorId(id);
@@ -785,7 +785,7 @@ var MyService = /** @class */ (function () {
             "StationId": stationId,
             "Description": "",
         };
-        this.http.post("/VAmbassadorService/api/visit/SaveStats", data)
+        this.http.post("//ec2-52-87-186-251.compute-1.amazonaws.com/VAmbassadorService/api/visit/SaveStats", data)
             .toPromise()
             .then(function (id) {
             console.info('saveStats id', id);
@@ -797,7 +797,7 @@ var MyService = /** @class */ (function () {
             "StationId": stationId,
             "Rate": rating
         };
-        this.http.post("/VAmbassadorService/api/visit/SaveRating", data)
+        this.http.post("//ec2-52-87-186-251.compute-1.amazonaws.com/VAmbassadorService/api/visit/SaveRating", data)
             .toPromise()
             .then(function (id) {
             console.info('saveRating id', id);
