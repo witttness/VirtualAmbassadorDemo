@@ -41,7 +41,7 @@ module.exports = "<body>\n  <app-nav-menu></app-nav-menu>\n  <div [@routeAnimati
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-info btn-block\" [routerLink]='[\"/map\"]'>Museum Map</button>\n    </div>\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-primary btn-block\" [routerLink]='[\"/scan\"]'>Scan Exhibit</button>\n    </div>\n</div>\n<div class=\"text-center\">\n    <h1 style=\"text-transform: capitalize;font-size: 90px\">DECIDE</h1>\n    <div>Like the exhibit? <star-rating [starType]=\"'svg'\" [rating]=\"4\" (ratingChange)=\"rateExhibit($event)\"></star-rating></div>\n    <p>Use the information on this page in addition to what you see at the exhibit.</p>\n    <iframe width=\"100%\" src=\"https://www.youtube.com/embed/0ddgrHehprk\" frameborder=\"0\"\n        allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\n    <p class=\"mt-20\">Here are some games you might like...</p>\n    <button class=\"btn-danger btn-block btn-lg\">Credit 201</button>\n    <button class=\"btn-warning btn-block btn-lg\">Credit Post Doc</button>\n</div>"
+module.exports = "<div class=\"row\">\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-info btn-block\" [routerLink]='[\"/map\"]'>Museum Map</button>\n    </div>\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-primary btn-block\" [routerLink]='[\"/scan\"]'>Scan Exhibit</button>\n    </div>\n</div>\n<div class=\"text-center\">\n    <h1 style=\"text-transform: capitalize;font-size: 90px\">DECIDE</h1>\n    <div>Like the exhibit? <star-rating [starType]=\"'svg'\" [rating]=\"0\" (ratingChange)=\"rateExhibit($event)\"></star-rating></div>\n    <p>Use the information on this page in addition to what you see at the exhibit.</p>\n    <iframe width=\"100%\" src=\"https://www.youtube.com/embed/0ddgrHehprk\" frameborder=\"0\"\n        allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\n    <p class=\"mt-20\">Here are some games you might like...</p>\n    <button class=\"btn-danger btn-block btn-lg\">Credit 201</button>\n    <button class=\"btn-warning btn-block btn-lg\">Credit Post Doc</button>\n</div>"
 
 /***/ }),
 
@@ -63,7 +63,7 @@ module.exports = "<p>\n    exhibit works!\n    {{ exhibitId$ | async }}\n  </p>\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-info btn-block\" [routerLink]='[\"/map\"]'>Museum Map</button>\n    </div>\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-primary btn-block\" [routerLink]='[\"/scan\"]'>Scan Exhibit</button>\n    </div>\n</div>\n<div class=\"text-center\">\n    <h1 style=\"text-transform: capitalize;font-size: 80px\">SCARCITY</h1>\n    <div>Like the exhibit? <star-rating [starType]=\"'svg'\" [rating]=\"4\" (ratingChange)=\"rateExhibit($event)\"></star-rating></div>\n    <p>Use the information on this page in addition to what you see at the exhibit.</p>\n    <iframe width=\"100%\" src=\"https://www.youtube.com/embed/1cYMW5d_bn4\" frameborder=\"0\"\n        allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\n    <p class=\"mt-20\">Here are some games you might like...</p>\n    <button class=\"btn-danger btn-block btn-lg\">Play the SCARCITY Game</button>\n    <button class=\"btn-warning btn-block btn-lg\">Get Scarce!</button>\n</div>"
+module.exports = "<div class=\"row\">\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-info btn-block\" [routerLink]='[\"/map\"]'>Museum Map</button>\n    </div>\n    <div class=\"col\">\n        <button type=\"button\" class=\"btn btn-primary btn-block\" [routerLink]='[\"/scan\"]'>Scan Exhibit</button>\n    </div>\n</div>\n<div class=\"text-center\">\n    <h1 style=\"text-transform: capitalize;font-size: 80px\">SCARCITY</h1>\n    <div>Like the exhibit? <star-rating [starType]=\"'svg'\" [rating]=\"0\" (ratingChange)=\"rateExhibit($event)\"></star-rating></div>\n    <p>Use the information on this page in addition to what you see at the exhibit.</p>\n    <iframe width=\"100%\" src=\"https://www.youtube.com/embed/1cYMW5d_bn4\" frameborder=\"0\"\n        allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\n    <p class=\"mt-20\">Here are some games you might like...</p>\n    <button class=\"btn-danger btn-block btn-lg\">Play the SCARCITY Game</button>\n    <button class=\"btn-warning btn-block btn-lg\">Get Scarce!</button>\n</div>"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "<div class=\"row\">\n    <div class=\"col\">\n        <button 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"text-center\">\n    <img src=\"assets/EconMus_horiz_pos_e.png\" class=\"img-fluid\">\n    <hr>\n    <h1>Welcome!</h1>\n    <p>This is your <em>Virtual Ambassador</em> to escort you through the museum and ensure you have the best\n        experience possible.</p>\n    <p>Would you mind telling us a little about yourself?</p>\n    <p>\n        <a class=\"btn btn-primary btn-block\" [routerLink]='[\"/visitorInfo\"]'>Sure! I can tell you about me.</a>\n        <a class=\"btn btn-primary btn-block\" (click)=\"startAnonymous()\">No! Just Show Me a Map!</a>\n        <button class=\"btn btn-xs\" (click)=\"goToExhibitDemo()\">Demo</button>\n    </p>\n\n</div>"
+module.exports = "<div class=\"text-center\">\n    <img src=\"assets/EconMus_horiz_pos_e.png\" class=\"img-fluid\">\n    <hr>\n    <h1>Welcome!</h1>\n    <p>This is your <em>Virtual Ambassador</em> to escort you through the museum and ensure you have the best\n        experience possible.</p>\n    <p>Would you mind telling us a little about yourself?</p>\n    <p>\n        <a class=\"btn btn-primary btn-block\" [routerLink]='[\"/visitorInfo\"]'>Sure! I can tell you about me.</a>\n        <a class=\"btn btn-primary btn-block\" (click)=\"startAnonymous()\">No! Just Show Me a Map!</a>\n        <!-- <button class=\"btn btn-xs\" (click)=\"goToExhibitDemo()\">Demo</button> -->\n    </p>\n\n</div>"
 
 /***/ }),
 
@@ -378,25 +378,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @zxing/ngx-scanner */ "./node_modules/@zxing/ngx-scanner/fesm2015/zxing-ngx-scanner.js");
-/* harmony import */ var angular2_qrscanner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular2-qrscanner */ "./node_modules/angular2-qrscanner/esm2015/angular2-qrscanner.js");
-/* harmony import */ var angular_star_rating__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! angular-star-rating */ "./node_modules/angular-star-rating/esm2015/angular-star-rating.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./nav-menu/nav-menu.component */ "./src/app/nav-menu/nav-menu.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _visitor_info_visitor_info_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./visitor-info/visitor-info.component */ "./src/app/visitor-info/visitor-info.component.ts");
-/* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./map/map.component */ "./src/app/map/map.component.ts");
-/* harmony import */ var _exhibit_exhibit_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./exhibit/exhibit.component */ "./src/app/exhibit/exhibit.component.ts");
-/* harmony import */ var _scan_scan_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./scan/scan.component */ "./src/app/scan/scan.component.ts");
-/* harmony import */ var _exhibit_scarcity_scarcity_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./exhibit/scarcity/scarcity.component */ "./src/app/exhibit/scarcity/scarcity.component.ts");
-/* harmony import */ var _exhibit_decide_decide_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./exhibit/decide/decide.component */ "./src/app/exhibit/decide/decide.component.ts");
-/* harmony import */ var _my_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./my.service */ "./src/app/my.service.ts");
-/* harmony import */ var _visitor_info_get_zip_get_zip_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./visitor-info/get-zip/get-zip.component */ "./src/app/visitor-info/get-zip/get-zip.component.ts");
-/* harmony import */ var _visitor_info_get_age_get_age_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./visitor-info/get-age/get-age.component */ "./src/app/visitor-info/get-age/get-age.component.ts");
-/* harmony import */ var _visitor_info_get_group_get_group_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./visitor-info/get-group/get-group.component */ "./src/app/visitor-info/get-group/get-group.component.ts");
-/* harmony import */ var _visitor_info_get_education_get_education_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./visitor-info/get-education/get-education.component */ "./src/app/visitor-info/get-education/get-education.component.ts");
-/* harmony import */ var _visitor_thanks_visitor_thanks_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./visitor-thanks/visitor-thanks.component */ "./src/app/visitor-thanks/visitor-thanks.component.ts");
-
+/* harmony import */ var angular_star_rating__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular-star-rating */ "./node_modules/angular-star-rating/esm2015/angular-star-rating.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./nav-menu/nav-menu.component */ "./src/app/nav-menu/nav-menu.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _visitor_info_visitor_info_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./visitor-info/visitor-info.component */ "./src/app/visitor-info/visitor-info.component.ts");
+/* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./map/map.component */ "./src/app/map/map.component.ts");
+/* harmony import */ var _exhibit_exhibit_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./exhibit/exhibit.component */ "./src/app/exhibit/exhibit.component.ts");
+/* harmony import */ var _scan_scan_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./scan/scan.component */ "./src/app/scan/scan.component.ts");
+/* harmony import */ var _exhibit_scarcity_scarcity_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./exhibit/scarcity/scarcity.component */ "./src/app/exhibit/scarcity/scarcity.component.ts");
+/* harmony import */ var _exhibit_decide_decide_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./exhibit/decide/decide.component */ "./src/app/exhibit/decide/decide.component.ts");
+/* harmony import */ var _my_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./my.service */ "./src/app/my.service.ts");
+/* harmony import */ var _visitor_info_get_zip_get_zip_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./visitor-info/get-zip/get-zip.component */ "./src/app/visitor-info/get-zip/get-zip.component.ts");
+/* harmony import */ var _visitor_info_get_age_get_age_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./visitor-info/get-age/get-age.component */ "./src/app/visitor-info/get-age/get-age.component.ts");
+/* harmony import */ var _visitor_info_get_group_get_group_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./visitor-info/get-group/get-group.component */ "./src/app/visitor-info/get-group/get-group.component.ts");
+/* harmony import */ var _visitor_info_get_education_get_education_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./visitor-info/get-education/get-education.component */ "./src/app/visitor-info/get-education/get-education.component.ts");
+/* harmony import */ var _visitor_thanks_visitor_thanks_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./visitor-thanks/visitor-thanks.component */ "./src/app/visitor-thanks/visitor-thanks.component.ts");
 
 
 
@@ -426,20 +424,20 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"],
-            _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_11__["NavMenuComponent"],
-            _home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"],
-            _visitor_info_visitor_info_component__WEBPACK_IMPORTED_MODULE_13__["VisitorInfoComponent"],
-            _map_map_component__WEBPACK_IMPORTED_MODULE_14__["MapComponent"],
-            _exhibit_exhibit_component__WEBPACK_IMPORTED_MODULE_15__["ExhibitComponent"],
-            _scan_scan_component__WEBPACK_IMPORTED_MODULE_16__["ScanComponent"],
-            _exhibit_scarcity_scarcity_component__WEBPACK_IMPORTED_MODULE_17__["SCARCITYComponent"],
-            _exhibit_decide_decide_component__WEBPACK_IMPORTED_MODULE_18__["DECIDEComponent"],
-            _visitor_info_get_zip_get_zip_component__WEBPACK_IMPORTED_MODULE_20__["GetZipComponent"],
-            _visitor_info_get_age_get_age_component__WEBPACK_IMPORTED_MODULE_21__["GetAgeComponent"],
-            _visitor_info_get_group_get_group_component__WEBPACK_IMPORTED_MODULE_22__["GetGroupComponent"],
-            _visitor_info_get_education_get_education_component__WEBPACK_IMPORTED_MODULE_23__["GetEducationComponent"],
-            _visitor_thanks_visitor_thanks_component__WEBPACK_IMPORTED_MODULE_24__["VisitorThanksComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
+            _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_10__["NavMenuComponent"],
+            _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
+            _visitor_info_visitor_info_component__WEBPACK_IMPORTED_MODULE_12__["VisitorInfoComponent"],
+            _map_map_component__WEBPACK_IMPORTED_MODULE_13__["MapComponent"],
+            _exhibit_exhibit_component__WEBPACK_IMPORTED_MODULE_14__["ExhibitComponent"],
+            _scan_scan_component__WEBPACK_IMPORTED_MODULE_15__["ScanComponent"],
+            _exhibit_scarcity_scarcity_component__WEBPACK_IMPORTED_MODULE_16__["SCARCITYComponent"],
+            _exhibit_decide_decide_component__WEBPACK_IMPORTED_MODULE_17__["DECIDEComponent"],
+            _visitor_info_get_zip_get_zip_component__WEBPACK_IMPORTED_MODULE_19__["GetZipComponent"],
+            _visitor_info_get_age_get_age_component__WEBPACK_IMPORTED_MODULE_20__["GetAgeComponent"],
+            _visitor_info_get_group_get_group_component__WEBPACK_IMPORTED_MODULE_21__["GetGroupComponent"],
+            _visitor_info_get_education_get_education_component__WEBPACK_IMPORTED_MODULE_22__["GetEducationComponent"],
+            _visitor_thanks_visitor_thanks_component__WEBPACK_IMPORTED_MODULE_23__["VisitorThanksComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -447,12 +445,11 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
             _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_6__["ZXingScannerModule"],
-            angular2_qrscanner__WEBPACK_IMPORTED_MODULE_7__["NgQrScannerModule"],
-            angular_star_rating__WEBPACK_IMPORTED_MODULE_8__["StarRatingModule"].forRoot(),
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"]
+            angular_star_rating__WEBPACK_IMPORTED_MODULE_7__["StarRatingModule"].forRoot(),
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"]
         ],
-        providers: [_my_service__WEBPACK_IMPORTED_MODULE_19__["MyService"]],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
+        providers: [_my_service__WEBPACK_IMPORTED_MODULE_18__["MyService"]],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
     })
 ], AppModule);
 
