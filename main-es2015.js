@@ -107,7 +107,7 @@ module.exports = "<header>\n    <nav class='navbar navbar-expand-sm navbar-toggl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<zxing-scanner \n  [enable]=\"scannerOn\" \n  [torch]=\"lightOn\"\n  [formats]=\"allowedFormats\"\n  (torchCompatible)=\"onTorchCompatible($event)\"\n  (scanSuccess)=\"scanSuccess($event)\"></zxing-scanner>\n  <a class=\"btn btn-primary btn-block\" [routerLink]='[\"/map\"]'>Cancel</a>"
+module.exports = "<!-- <qr-scanner (onRead)=\"onRead($event)\"></qr-scanner> -->\n<zxing-scanner \n  [enable]=\"scannerOn\" \n  [formats]=\"allowedFormats\"\n  (scanSuccess)=\"scanSuccess($event)\"></zxing-scanner>\n  <a class=\"btn btn-primary btn-block\" [routerLink]='[\"/map\"]'>Cancel</a>"
 
 /***/ }),
 
@@ -378,23 +378,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @zxing/ngx-scanner */ "./node_modules/@zxing/ngx-scanner/fesm2015/zxing-ngx-scanner.js");
-/* harmony import */ var angular_star_rating__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular-star-rating */ "./node_modules/angular-star-rating/esm2015/angular-star-rating.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./nav-menu/nav-menu.component */ "./src/app/nav-menu/nav-menu.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _visitor_info_visitor_info_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./visitor-info/visitor-info.component */ "./src/app/visitor-info/visitor-info.component.ts");
-/* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./map/map.component */ "./src/app/map/map.component.ts");
-/* harmony import */ var _exhibit_exhibit_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./exhibit/exhibit.component */ "./src/app/exhibit/exhibit.component.ts");
-/* harmony import */ var _scan_scan_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./scan/scan.component */ "./src/app/scan/scan.component.ts");
-/* harmony import */ var _exhibit_scarcity_scarcity_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./exhibit/scarcity/scarcity.component */ "./src/app/exhibit/scarcity/scarcity.component.ts");
-/* harmony import */ var _exhibit_decide_decide_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./exhibit/decide/decide.component */ "./src/app/exhibit/decide/decide.component.ts");
-/* harmony import */ var _my_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./my.service */ "./src/app/my.service.ts");
-/* harmony import */ var _visitor_info_get_zip_get_zip_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./visitor-info/get-zip/get-zip.component */ "./src/app/visitor-info/get-zip/get-zip.component.ts");
-/* harmony import */ var _visitor_info_get_age_get_age_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./visitor-info/get-age/get-age.component */ "./src/app/visitor-info/get-age/get-age.component.ts");
-/* harmony import */ var _visitor_info_get_group_get_group_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./visitor-info/get-group/get-group.component */ "./src/app/visitor-info/get-group/get-group.component.ts");
-/* harmony import */ var _visitor_info_get_education_get_education_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./visitor-info/get-education/get-education.component */ "./src/app/visitor-info/get-education/get-education.component.ts");
-/* harmony import */ var _visitor_thanks_visitor_thanks_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./visitor-thanks/visitor-thanks.component */ "./src/app/visitor-thanks/visitor-thanks.component.ts");
+/* harmony import */ var angular2_qrscanner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular2-qrscanner */ "./node_modules/angular2-qrscanner/esm2015/angular2-qrscanner.js");
+/* harmony import */ var angular_star_rating__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! angular-star-rating */ "./node_modules/angular-star-rating/esm2015/angular-star-rating.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./nav-menu/nav-menu.component */ "./src/app/nav-menu/nav-menu.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _visitor_info_visitor_info_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./visitor-info/visitor-info.component */ "./src/app/visitor-info/visitor-info.component.ts");
+/* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./map/map.component */ "./src/app/map/map.component.ts");
+/* harmony import */ var _exhibit_exhibit_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./exhibit/exhibit.component */ "./src/app/exhibit/exhibit.component.ts");
+/* harmony import */ var _scan_scan_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./scan/scan.component */ "./src/app/scan/scan.component.ts");
+/* harmony import */ var _exhibit_scarcity_scarcity_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./exhibit/scarcity/scarcity.component */ "./src/app/exhibit/scarcity/scarcity.component.ts");
+/* harmony import */ var _exhibit_decide_decide_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./exhibit/decide/decide.component */ "./src/app/exhibit/decide/decide.component.ts");
+/* harmony import */ var _my_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./my.service */ "./src/app/my.service.ts");
+/* harmony import */ var _visitor_info_get_zip_get_zip_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./visitor-info/get-zip/get-zip.component */ "./src/app/visitor-info/get-zip/get-zip.component.ts");
+/* harmony import */ var _visitor_info_get_age_get_age_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./visitor-info/get-age/get-age.component */ "./src/app/visitor-info/get-age/get-age.component.ts");
+/* harmony import */ var _visitor_info_get_group_get_group_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./visitor-info/get-group/get-group.component */ "./src/app/visitor-info/get-group/get-group.component.ts");
+/* harmony import */ var _visitor_info_get_education_get_education_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./visitor-info/get-education/get-education.component */ "./src/app/visitor-info/get-education/get-education.component.ts");
+/* harmony import */ var _visitor_thanks_visitor_thanks_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./visitor-thanks/visitor-thanks.component */ "./src/app/visitor-thanks/visitor-thanks.component.ts");
+
 
 
 
@@ -424,20 +426,20 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
-            _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_10__["NavMenuComponent"],
-            _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
-            _visitor_info_visitor_info_component__WEBPACK_IMPORTED_MODULE_12__["VisitorInfoComponent"],
-            _map_map_component__WEBPACK_IMPORTED_MODULE_13__["MapComponent"],
-            _exhibit_exhibit_component__WEBPACK_IMPORTED_MODULE_14__["ExhibitComponent"],
-            _scan_scan_component__WEBPACK_IMPORTED_MODULE_15__["ScanComponent"],
-            _exhibit_scarcity_scarcity_component__WEBPACK_IMPORTED_MODULE_16__["SCARCITYComponent"],
-            _exhibit_decide_decide_component__WEBPACK_IMPORTED_MODULE_17__["DECIDEComponent"],
-            _visitor_info_get_zip_get_zip_component__WEBPACK_IMPORTED_MODULE_19__["GetZipComponent"],
-            _visitor_info_get_age_get_age_component__WEBPACK_IMPORTED_MODULE_20__["GetAgeComponent"],
-            _visitor_info_get_group_get_group_component__WEBPACK_IMPORTED_MODULE_21__["GetGroupComponent"],
-            _visitor_info_get_education_get_education_component__WEBPACK_IMPORTED_MODULE_22__["GetEducationComponent"],
-            _visitor_thanks_visitor_thanks_component__WEBPACK_IMPORTED_MODULE_23__["VisitorThanksComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"],
+            _nav_menu_nav_menu_component__WEBPACK_IMPORTED_MODULE_11__["NavMenuComponent"],
+            _home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"],
+            _visitor_info_visitor_info_component__WEBPACK_IMPORTED_MODULE_13__["VisitorInfoComponent"],
+            _map_map_component__WEBPACK_IMPORTED_MODULE_14__["MapComponent"],
+            _exhibit_exhibit_component__WEBPACK_IMPORTED_MODULE_15__["ExhibitComponent"],
+            _scan_scan_component__WEBPACK_IMPORTED_MODULE_16__["ScanComponent"],
+            _exhibit_scarcity_scarcity_component__WEBPACK_IMPORTED_MODULE_17__["SCARCITYComponent"],
+            _exhibit_decide_decide_component__WEBPACK_IMPORTED_MODULE_18__["DECIDEComponent"],
+            _visitor_info_get_zip_get_zip_component__WEBPACK_IMPORTED_MODULE_20__["GetZipComponent"],
+            _visitor_info_get_age_get_age_component__WEBPACK_IMPORTED_MODULE_21__["GetAgeComponent"],
+            _visitor_info_get_group_get_group_component__WEBPACK_IMPORTED_MODULE_22__["GetGroupComponent"],
+            _visitor_info_get_education_get_education_component__WEBPACK_IMPORTED_MODULE_23__["GetEducationComponent"],
+            _visitor_thanks_visitor_thanks_component__WEBPACK_IMPORTED_MODULE_24__["VisitorThanksComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -445,11 +447,12 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
             _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_6__["ZXingScannerModule"],
-            angular_star_rating__WEBPACK_IMPORTED_MODULE_7__["StarRatingModule"].forRoot(),
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"]
+            angular2_qrscanner__WEBPACK_IMPORTED_MODULE_7__["NgQrScannerModule"],
+            angular_star_rating__WEBPACK_IMPORTED_MODULE_8__["StarRatingModule"].forRoot(),
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"]
         ],
-        providers: [_my_service__WEBPACK_IMPORTED_MODULE_18__["MyService"]],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
+        providers: [_my_service__WEBPACK_IMPORTED_MODULE_19__["MyService"]],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
     })
 ], AppModule);
 
@@ -910,7 +913,7 @@ let ScanComponent = class ScanComponent {
     constructor(router, svc) {
         this.router = router;
         this.svc = svc;
-        this.scannerOn = false;
+        this.scannerOn = true;
         this.lightOn = false;
         this.allowedFormats = [
             _zxing_library__WEBPACK_IMPORTED_MODULE_3__["BarcodeFormat"].QR_CODE,
@@ -920,10 +923,10 @@ let ScanComponent = class ScanComponent {
         ];
     }
     ngOnInit() {
-        this.scannerOn = true;
+        //this.scannerOn = true;
     }
     ngOnDestroy() {
-        this.lightOn = false;
+        //this.lightOn = false;
         this.scannerOn = false;
     }
     onTorchCompatible(e) {
@@ -944,6 +947,9 @@ let ScanComponent = class ScanComponent {
             //REMOVE THIS:
             //this.router.navigateByUrl(`/exhibit/ex1`);
         }
+    }
+    onRead(data) {
+        console.info(data);
     }
 };
 ScanComponent.ctorParameters = () => [
